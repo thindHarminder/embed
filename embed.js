@@ -10,10 +10,10 @@ button.style.border = "1px solid #2E3137";
 button.style.borderRadius = "4px";
 button.style.backgroundColor = "#1F2024";
 button.style.color = "#fcfcfc";
-button.style.paddingTop = "1rem";
-button.style.paddingRight = "2rem";
-button.style.paddingBottom = "1rem";
-button.style.paddingLeft = "2rem";
+button.style.paddingTop = "8px";
+button.style.paddingRight = "16px";
+button.style.paddingBottom = "8px";
+button.style.paddingLeft = "16px";
 button.innerHTML = 'Created by theThind';
 
 
