@@ -2,13 +2,17 @@
 
 // Create a new button element
 const button = document.createElement("button");
-button.classList.add('button-embed', 'is-embed-trigger');
+
 button.style.position = "fixed";
 button.style.bottom = "20px";
 button.style.right = "20px";
 button.style.border = "1px solid #2E3137";
 button.style.borderRadius = "4px";
-button.style.backgroundColor = "transparent";
+button.style.backgroundColor = "#1F2024";
+button.style.paddingTop = "1rem";
+button.style.paddingRight = "2rem";
+button.style.paddingBottom = "1rem";
+button.style.paddingLeft = "2rem";
 button.innerHTML = 'Created by theThind';
 
 
