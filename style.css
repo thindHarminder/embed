@@ -1,0 +1,87 @@
+
+  .button-embed {
+  display: flex;
+  padding-top: 0.75rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-top-style: solid;
+  border-top-width: 0px;
+  border-top-color: hsla(240.50000000000003, 63.83%, 63.14%, 1.00);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-right-color: hsla(240.50000000000003, 63.83%, 63.14%, 1.00);
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-bottom-color: hsla(240.50000000000003, 63.83%, 63.14%, 1.00);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-left-color: hsla(240.50000000000003, 63.83%, 63.14%, 1.00);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  background-image: linear-gradient(to bottom, hsla(240.50000000000003, 63.83%, 63.14%, 1.00), hsla(258.2608695652174, 49.33%, 27.41%, 1.00));
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  color: hsla(262.4999999999999, 0.00%, 98.93%, 1.00);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-embed:hover {
+  border-top-style: solid;
+  border-top-width: 0px;
+  border-top-color: hsla(240.50000000000003, 63.83%, 63.14%, 1.00);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-right-color: hsla(240.50000000000003, 63.83%, 63.14%, 1.00);
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-bottom-color: hsla(240.50000000000003, 63.83%, 63.14%, 1.00);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-left-color: hsla(240.50000000000003, 63.83%, 63.14%, 1.00);
+  background-color: hsla(240.50000000000003, 50.49%, 53.41%, 1.00);
+  background-image: linear-gradient(to bottom, hsla(240.50000000000003, 63.83%, 63.14%, 1.00), hsla(240.50000000000003, 63.83%, 63.14%, 1.00));
+}
+
+.button-embed.is-embed-trigger {
+  border-top-width: 1px;
+  border-top-color: #2e3137;
+  border-right-width: 1px;
+  border-right-color: #2e3137;
+  border-bottom-width: 1px;
+  border-bottom-color: #2e3137;
+  border-left-width: 1px;
+  border-left-color: #2e3137;
+  background-image: linear-gradient(to bottom, #1f2024, #1f2024);
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.button-embed.is-embed-trigger:hover {
+  box-shadow: 0 3px 8px 4px hsla(243.92523364485982, 40.00%, 25.90%, 0.23);
+}
+
+iframe {
+  animation-name: slide-up;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-up {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0;
+  }
+}
