@@ -14,6 +14,8 @@ button.style.paddingTop = "8px";
 button.style.paddingRight = "16px";
 button.style.paddingBottom = "8px";
 button.style.paddingLeft = "16px";
+button.style.fontSize = "12px"; // Added font size
+button.style.fontWeight = "400";
 button.innerHTML = 'Created by theThind';
 
 
