@@ -1,41 +1,106 @@
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thindHarminder/embed@e6a9c41b7190a1a9e4c8e57ecd79ebebfde7b7bb/style.css">
+
+
 // Create a new button element
 const button = document.createElement("button");
-
-// Set the button's style
+button.classList.add('button-embed', 'is-embed-trigger');
 button.style.position = "fixed";
 button.style.bottom = "20px";
 button.style.right = "20px";
-button.style.padding = "10px 20px";
-button.style.background = "#4CAF50";
-button.style.color = "white";
-button.style.border = "none";
-button.style.borderRadius = "3px";
-button.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.2)";
-button.style.cursor = "pointer";
-
-// Set the button's text
-button.innerText = "Open iframe";
+button.innerHTML = 'Created by theThind';
 
 // Add an event listener to the button
 button.addEventListener("click", () => {
+  // Create a new iframe container element
+  const iframeContainer = document.createElement("div");
+
+  // Set the container's style
+  iframeContainer.style.position = "fixed";
+  iframeContainer.style.overflow = "hidden";
+  iframeContainer.style.bottom = "20px";
+  iframeContainer.style.right = "20px";
+  iframeContainer.style.width = "25vw";
+  iframeContainer.style.height = "70vh";
+  iframeContainer.style.height = "70vh";
+  iframeContainer.style.border = "1px solid #2E3137";
+  iframeContainer.style.borderRadius = "8px";
+  iframeContainer.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+  iframeContainer.style.backgroundColor = "transparent";
+  iframeContainer.style.transition = 'bottom 0.5s ease-in-out';
+  
+  // Set the minimum width and height for iframeContainer
+iframeContainer.style.minWidth = "365px";
+iframeContainer.style.minHeight = "600px";
+
+// Check if the screen width is below 600 pixels
+  if (window.innerWidth < 600) {
+    iframeContainer.style.width = "100vw";
+    iframeContainer.style.height = "100vh";
+    iframeContainer.style.bottom = "0px";
+  iframeContainer.style.right = "0px";
+  }
+  
+ 
+  
+  
+  
+
+  // Create a new close button element
+  const closeButton = document.createElement("button");
+  
+
+  // Set the button's style
+  closeButton.style.position = "absolute";
+  closeButton.style.top = "2rem";
+  closeButton.style.right = "2rem";
+  closeButton.style.cursor = "pointer";
+  closeButton.style.backgroundColor = "transparent";
+  closeButton.style.color = "#fcfcfc";
+  
+// Set the button's SVG icon
+closeButton.innerHTML = '<svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><path d="M14 14L34 34" stroke="#fcfcfc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 34L34 14" stroke="#fcfcfc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+  
+  // Check if the screen width is below 600 pixels
+  if (window.innerWidth < 600) {
+    closeButton.style.top = "2rem";
+  closeButton.style.right = "2rem";
+  }
+
+
+  
+
+  // Add an event listener to the close button
+  closeButton.addEventListener("click", () => {
+    // Remove the iframe container from the page
+    document.body.removeChild(iframeContainer);
+  });
+
   // Create a new iframe element
   const iframe = document.createElement("iframe");
 
   // Set the iframe's style
-  iframe.style.position = "fixed";
-  iframe.style.bottom = "0";
-  iframe.style.right = "0";
-  iframe.style.width = "30vw";
-  iframe.style.height = "70vh";
+  iframe.style.width = "100%";
+  iframe.style.height = "100%";
   iframe.style.border = "none";
-  iframe.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.2)";
+  iframe.style.transition = 'bottom 0.5s ease-in-out';
+  
 
   // Set the iframe's source URL
-  iframe.src = "https://thethind.com";
+  iframe.src = "https://myembed.webflow.io";
 
-  // Add the iframe to the page
-  document.body.appendChild(iframe);
+  // Add the iframe and close button to the container
+  iframeContainer.appendChild(closeButton);
+  iframeContainer.appendChild(iframe);
+
+  // Add the container to the page
+  document.body.appendChild(iframeContainer);
 });
 
 // Add the button to the page
 document.body.appendChild(button);
+
+
