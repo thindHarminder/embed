@@ -6,8 +6,10 @@ button.classList.add('button-embed', 'is-embed-trigger');
 button.style.position = "fixed";
 button.style.bottom = "20px";
 button.style.right = "20px";
+button.style.border = "1px solid #2E3137";
+button.style.borderRadius = "4px";
 button.style.backgroundColor = "transparent";
-button.innerHTML = '<img src="https://uploads-ssl.webflow.com/63ec0509b2f4fb79168d653d/63ed572961ac7f992e845c62_Frame%20262.png" alt="Open MyEmbed">';
+button.innerHTML = 'Created by theThind';
 
 
 // Add an event listener to the button
