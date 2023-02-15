@@ -1,7 +1,6 @@
 
 
 
-link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thindHarminder/embed@e6a9c41b7190a1a9e4c8e57ecd79ebebfde7b7bb/style.css";
 
 
 // Create a new button element
