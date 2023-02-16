@@ -27,6 +27,7 @@ button.addEventListener("click", () => {
   // Set the container's style
   iframeContainer.style.position = "fixed";
   iframeContainer.style.overflow = "hidden";
+  iframeContainer.style.zIndex = "200";
   iframeContainer.style.bottom = "20px";
   iframeContainer.style.right = "20px";
   iframeContainer.style.width = "25vw";
