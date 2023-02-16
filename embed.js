@@ -6,21 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
 const button = document.createElement("button");
 
 button.style.position = "fixed";
-button.style.zIndex = "190";
+button.style.zIndex = "2147483648 !important";
 button.style.bottom = "12px";
 button.style.right = "12px";
-button.style.border = "1px solid #2E3137";
-button.style.borderRadius = "4px";
-button.style.backgroundColor = "#1F2024";
-button.style.color = "#fcfcfc";
 button.style.width = "135px";
 button.style.height = "28px";
-button.style.fontSize = "12px"; // Added font size
-button.style.fontWeight = "400";
+
 
   // Create an img element and set the src attribute
 const img = document.createElement("img");
-img.src = "https://uploads-ssl.webflow.com/63ec0509b2f4fb79168d653d/63ee69a3bf879d39dc5988d9_brand.svg";
+img.src = "https://uploads-ssl.webflow.com/63ec0509b2f4fb79168d653d/63ee6bfb1e6fe443764053d1_brand2.svg";
 
 // Append the img element to the button element
 button.appendChild(img);
@@ -42,7 +37,7 @@ button.addEventListener("click", () => {
   // Set the container's style
   iframeContainer.style.position = "fixed";
   iframeContainer.style.overflow = "hidden";
-  iframeContainer.style.zIndex = "200";
+  iframeContainer.style.zIndex = "2147483650 !important";
   iframeContainer.style.bottom = "12px";
   iframeContainer.style.right = "12px";
   iframeContainer.style.width = "25rem";
