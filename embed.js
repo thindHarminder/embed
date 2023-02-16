@@ -45,8 +45,8 @@ iframeContainer.style.minHeight = "600px";
 
 // Check if the screen width is below 600 pixels
   if (window.innerWidth < 600) {
-    iframeContainer.style.width = "100vw";
-    iframeContainer.style.height = "100vh";
+    iframeContainer.style.width = "100%";
+    iframeContainer.style.height = "100%";
     iframeContainer.style.bottom = "0px";
   iframeContainer.style.right = "0px";
   }
