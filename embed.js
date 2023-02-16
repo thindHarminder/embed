@@ -23,6 +23,7 @@ img.src = "https://uploads-ssl.webflow.com/63ec0509b2f4fb79168d653d/63ee6bfb1e6f
 
 // Append the img element to the button element
 button.appendChild(img);
+  function adjustButton() {
 
 const webflowBadge = document.querySelector('.w-webflow-badge');
 
@@ -33,7 +34,7 @@ if (webflowBadge) {
 }
   
 
-setTimeout(createButton, 1000);
+setTimeout(adjustButton, 1000);
 
 // Add an event listener to the button
 button.addEventListener("click", () => {
