@@ -85,7 +85,7 @@ closeButton.innerHTML = '<svg width="20" height="20" viewBox="0 0 48 48" fill="n
     closeButton.style.top = "2rem";
   closeButton.style.right = "2rem";
   }
-}
+
 
 
   
@@ -119,3 +119,5 @@ closeButton.innerHTML = '<svg width="20" height="20" viewBox="0 0 48 48" fill="n
 
 // Add the button to the page
 document.body.appendChild(button);
+  
+  }
