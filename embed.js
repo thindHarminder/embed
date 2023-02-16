@@ -7,7 +7,7 @@ const button = document.createElement("button");
 
 button.style.position = "fixed";
 button.style.zIndex = "2147483648";
-button.style.bottom = "12px";
+button.style.bottom = "48px";
 button.style.right = "12px";
 button.style.backgroundColor = "transparent";
 button.style.width = "135px";
