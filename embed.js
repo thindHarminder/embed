@@ -17,7 +17,13 @@ button.style.width = "135px";
 button.style.height = "28px";
 button.style.fontSize = "12px"; // Added font size
 button.style.fontWeight = "400";
-button.innerHTML = <img src="https://uploads-ssl.webflow.com/63ec0509b2f4fb79168d653d/63ee69a3bf879d39dc5988d9_brand.svg" alt="theThind-badge">;
+
+  // Create an img element and set the src attribute
+const img = document.createElement("img");
+img.src = "https://uploads-ssl.webflow.com/63ec0509b2f4fb79168d653d/63ee69a3bf879d39dc5988d9_brand.svg";
+
+// Append the img element to the button element
+button.appendChild(img);
 
 const webflowBadge = document.querySelector('.w-webflow-badge');
 
