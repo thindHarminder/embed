@@ -7,7 +7,7 @@ const button = document.createElement("button");
 
 button.style.position = "fixed";
 button.style.zIndex = "2147483648";
-button.style.bottom = "48px";
+button.style.bottom = "12px";
 button.style.right = "12px";
 button.style.backgroundColor = "transparent";
 button.style.width = "135px";
@@ -28,7 +28,7 @@ const webflowBadge = document.querySelector('.w-webflow-badge');
 
 if (webflowBadge) {
   // If the element is present, add 12 to the button's bottom padding
-  button.style.paddingBottom = "24px";
+  button.style.paddingBottom = "48px";
 }
 }
   
