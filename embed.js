@@ -11,11 +11,14 @@ button.style.bottom = "12px";
 button.style.right = "12px";
 button.style.width = "135px";
 button.style.height = "28px";
+button.style.backgroundColor = "transparent";
 
 
   // Create an img element and set the src attribute
 const img = document.createElement("img");
 img.src = "https://uploads-ssl.webflow.com/63ec0509b2f4fb79168d653d/63ee6bfb1e6fe443764053d1_brand2.svg";
+  img.style.width = "100%";
+img.style.height = "100%";
 
 // Append the img element to the button element
 button.appendChild(img);
