@@ -4,6 +4,7 @@
 const button = document.createElement("button");
 
 button.style.position = "fixed";
+button.style.zIndex = "190";
 button.style.bottom = "20px";
 button.style.right = "20px";
 button.style.border = "1px solid #2E3137";
