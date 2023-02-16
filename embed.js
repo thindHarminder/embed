@@ -21,20 +21,11 @@ button.innerHTML = 'Created by theThind';
 
 const webflowBadge = document.querySelector('.w-webflow-badge');
 
-// Check if the element is currently visible in the viewport
-if (isElementVisible(webflowBadge)) {
-  button.style.bottom = "24px";
+if (webflowBadge) {
+  // If the element is present, add 12 to the button's bottom padding
+  button.style.paddingBottom = "24px";
 }
 
-function isElementVisible(el) {
-  const rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
 
 
 // Add an event listener to the button
