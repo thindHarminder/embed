@@ -30,7 +30,7 @@ const webflowBadge = document.querySelector('.w-webflow-badge');
 
 if (webflowBadge) {
   // If the element is present, add 12 to the button's bottom padding
-  button.style.paddingBottom = "48px";
+  button.style.bottom = "48px";
 }
 
 }
