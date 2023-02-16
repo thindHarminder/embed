@@ -1,4 +1,6 @@
----- Floating BRanding Bbutton
+---- Floating Branding Button with webflow brand support
+
 ---- Add this script before </body>
 
-<script src="https://cdn.jsdelivr.net/gh/thindHarminder/embed@a506bc826783acd9e6e4e51c7ba5f00199547448/embed.js"/>
+<!--theThind Floating Branding-->
+<script src="https://cdn.jsdelivr.net/gh/thindHarminder/embed@c1b04ec07e33e22a831180722e7a119d995de7d3/embed.js" defer ></script>
