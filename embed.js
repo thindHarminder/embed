@@ -13,13 +13,11 @@ button.style.border = "1px solid #2E3137";
 button.style.borderRadius = "4px";
 button.style.backgroundColor = "#1F2024";
 button.style.color = "#fcfcfc";
-button.style.paddingTop = "8px";
-button.style.paddingRight = "16px";
-button.style.paddingBottom = "8px";
-button.style.paddingLeft = "16px";
+button.style.width = "135px";
+button.style.height = "28px";
 button.style.fontSize = "12px"; // Added font size
 button.style.fontWeight = "400";
-button.innerHTML = 'Created by theThind';
+button.innerHTML = <img src="https://uploads-ssl.webflow.com/63ec0509b2f4fb79168d653d/63ee69a3bf879d39dc5988d9_brand.svg" alt="theThind-badge">;
 
 const webflowBadge = document.querySelector('.w-webflow-badge');
 
