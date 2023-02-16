@@ -1,6 +1,6 @@
 // Wait for the page to finish loading
 document.addEventListener('DOMContentLoaded', function() {
-
+function createButton() {
 
 // Create a new button element
 const button = document.createElement("button");
@@ -30,8 +30,10 @@ if (webflowBadge) {
   // If the element is present, add 12 to the button's bottom padding
   button.style.paddingBottom = "24px";
 }
+}
+  
 
-
+setTimeout(createButton, 1000);
 
 // Add an event listener to the button
 button.addEventListener("click", () => {
