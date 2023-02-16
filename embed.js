@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const button = document.createElement("button");
 
 button.style.position = "fixed";
-button.style.zIndex = "2147483648 !important";
+button.style.zIndex = "2147483648";
 button.style.bottom = "12px";
 button.style.right = "12px";
 button.style.width = "135px";
@@ -40,7 +40,7 @@ button.addEventListener("click", () => {
   // Set the container's style
   iframeContainer.style.position = "fixed";
   iframeContainer.style.overflow = "hidden";
-  iframeContainer.style.zIndex = "2147483650 !important";
+  iframeContainer.style.zIndex = "2147483650";
   iframeContainer.style.bottom = "12px";
   iframeContainer.style.right = "12px";
   iframeContainer.style.width = "25rem";
