@@ -1,6 +1,6 @@
-// Wait for the page to finish loading
-document.addEventListener('DOMContentLoaded', function() {
-function createButton() {
+
+
+
 
 // Create a new button element
 const button = document.createElement("button");
@@ -20,7 +20,7 @@ button.style.paddingRight = "0px";
 const img = document.createElement("img");
 img.src = "https://uploads-ssl.webflow.com/63ec0509b2f4fb79168d653d/63ee6bfb1e6fe443764053d1_brand2.svg";
   
-
+function adjustButton() {
 // Append the img element to the button element
 button.appendChild(img);
   function adjustButton() {
@@ -31,6 +31,7 @@ if (webflowBadge) {
   // If the element is present, add 12 to the button's bottom padding
   button.style.paddingBottom = "48px";
 }
+
 }
   
 
@@ -128,8 +129,3 @@ closeButton.innerHTML = '<svg width="20" height="20" viewBox="0 0 48 48" fill="n
 // Add the button to the page
 document.body.appendChild(button);
 
-});
-
-
-  
-  
