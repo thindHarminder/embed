@@ -19,6 +19,13 @@ button.style.fontSize = "12px"; // Added font size
 button.style.fontWeight = "400";
 button.innerHTML = 'Created by theThind';
 
+const webflowBadge = document.querySelector('.w-webflow-badge');
+
+// Check if the element is currently visible in the viewport
+if (isElementVisible(webflowBadge)) {
+  button.style.bottom = "24px";
+}
+
 
 // Add an event listener to the button
 button.addEventListener("click", () => {
