@@ -1,3 +1,14 @@
+// Get the trigger button element
+const triggerButton = document.querySelector("button");
+
+// Add an event listener to all elements with the class "brand-trigger"
+const brandTriggerButtons = document.querySelectorAll(".brand-trigger");
+brandTriggerButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    triggerButton.click();
+  });
+});
+
 
 
 
