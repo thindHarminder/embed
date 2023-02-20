@@ -1,14 +1,3 @@
-// Get the trigger button element
-const triggerButton = document.querySelector("button");
-
-// Add an event listener to all elements with the class "brand-trigger"
-const brandTriggerButtons = document.querySelectorAll(".brand-trigger");
-brandTriggerButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    triggerButton.click();
-  });
-});
-
 
 
 
@@ -50,7 +39,7 @@ if (webflowBadge) {
 setTimeout(adjustButton, 1000);
 
 // Add an event listener to the button
-button.addEventListener("click", () => {
+function triggerPopup() {
   // Create a new iframe container element
   const iframeContainer = document.createElement("div");
 
@@ -136,6 +125,16 @@ closeButton.innerHTML = '<svg width="20" height="20" viewBox="0 0 48 48" fill="n
 
   // Add the container to the page
   document.body.appendChild(iframeContainer);
+};
+
+button.addEventListener("click", triggerPopup);
+
+const triggerButton = document.querySelector("button");
+
+// Add an event listener to all elements with the class "brand-trigger"
+const brandTriggerButtons = document.querySelectorAll(".brand-trigger");
+brandTriggerButtons.forEach(button => {
+  button.addEventListener ("click", triggerPopup);
 });
 
 // Add the button to the page
