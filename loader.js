@@ -12,8 +12,4 @@ function loadScriptsInOrder(scripts) {
   head.appendChild(script);
 }
 
-loadScriptsInOrder(['https://cdn.jsdelivr.net/gh/thindHarminder/openCodeEditor@85a00c7433cfeb5e561adb16d1aa28e7d1a20f30/codemirror.min.js,
-'https://cdn.jsdelivr.net/gh/thindHarminder/openCodeEditor@85a00c7433cfeb5e561adb16d1aa28e7d1a20f30/javascript.min.js', 
-'https://cdn.jsdelivr.net/gh/thindHarminder/openCodeEditor@85a00c7433cfeb5e561adb16d1aa28e7d1a20f30/css.min.js',
-'https://cdn.jsdelivr.net/gh/thindHarminder/openCodeEditor@85a00c7433cfeb5e561adb16d1aa28e7d1a20f30/xml.min.js',
-'https://cdn.jsdelivr.net/gh/thindHarminder/openCodeEditor@85a00c7433cfeb5e561adb16d1aa28e7d1a20f30/htmlmixed.min.js']);
+loadScriptsInOrder(['https://cdn.jsdelivr.net/gh/thindHarminder/embed@501591956dcd84e5665ad72be0b696156dfd3ae6/embed.js']);
