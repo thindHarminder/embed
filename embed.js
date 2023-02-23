@@ -1,4 +1,9 @@
 
+// create a new HTML comment element
+const brandingComment = document.createComment(' Made by thethind || thethind.com ');
+
+// insert the branding comment as the first child of the document's documentElement
+document.documentElement.insertBefore(brandingComment, document.documentElement.firstChild);
 
 
 
