@@ -1,9 +1,18 @@
+const brandingComment = document.createComment(`\n
 
-// create a new HTML comment element
-const brandingComment = document.createComment(' Made by thethind || thethind.com ');
+||\\//||     //\\\\     ||\\\\     ||==\n
+|| \\\\ ||    //  \\\\    || ||    ||=\n
+||    ||   //    \\\\   ||//     ||==\n\n
+||\n
+||\\\\  \\\\//\n
+||//   //\n\n
+======  ||  ||   ||==     ======   ||  ||  ======   ||\\\\  ||  ||\\\\\n
+  ||    ||==||   ||=        ||     ||==||    ||     || \\\\ ||  || ||\n
+  ||    ||  ||   ||==       ||     ||  ||  ======   ||  \\\\||  ||//\n\n
+Made by theThind || thethind.com\n`);
 
-// insert the branding comment as the first child of the document's documentElement
-document.documentElement.insertBefore(brandingComment, document.documentElement.firstChild);
+document.doctype.parentNode.insertBefore(brandingComment, document.doctype.nextSibling);
+
 
 
 // Add an event listener to the button
