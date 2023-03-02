@@ -29,26 +29,25 @@ button.style.height = "28px";
 button.style.paddingLeft = "0px";
 button.style.paddingRight = "0px";
 
-
-  // Create an img element and set the src attribute
+// Create an img element and set the src attribute
 const img = document.createElement("img");
 img.src = "https://uploads-ssl.webflow.com/63ec0509b2f4fb79168d653d/63ffe6f01b8a05dcadcb0b3c_brand.svg";
-  
 
 // Append the img element to the button element
 button.appendChild(img);
 
 function adjustButton() {
+  const webflowBadge = document.querySelector('.w-webflow-badge');
+  const brandingImg = document.querySelector('img[src="https://embed.wized.com/branding.svg"]');
 
-const webflowBadge = document.querySelector('.w-webflow-badge');
+  if (webflowBadge) {
+    button.style.bottom = "48px";
+  }
 
-if (webflowBadge) {
-  // If the element is present, add 12 to the button's bottom padding
-  button.style.bottom = "48px";
+  if (brandingImg) {
+    button.style.paddingBottom = "81px";
+  }
 }
-
-}
-  
 
 setTimeout(adjustButton, 1000);
 
