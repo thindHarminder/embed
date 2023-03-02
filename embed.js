@@ -45,7 +45,7 @@ function adjustButton() {
   }
 
   if (brandingImg) {
-    button.style.paddingBottom = "48px";
+    button.style.paddingBottom = "60px";
   }
 }
 
