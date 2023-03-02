@@ -32,7 +32,7 @@ button.style.paddingRight = "0px";
 
   // Create an img element and set the src attribute
 const img = document.createElement("img");
-img.src = "https://uploads-ssl.webflow.com/63ec0509b2f4fb79168d653d/63ee6bfb1e6fe443764053d1_brand2.svg";
+img.src = "https://uploads-ssl.webflow.com/63ec0509b2f4fb79168d653d/63ffe6f01b8a05dcadcb0b3c_brand.svg";
   
 
 // Append the img element to the button element
