@@ -38,7 +38,7 @@ button.appendChild(img);
 
 function adjustButton() {
   const webflowBadge = document.querySelector('.w-webflow-badge');
-  const brandingImg = document.querySelector('img[src="https://embed.wized.com/branding.svg"]');
+  const brandingImg = document.querySelector('[alt="wized-badge"]');
 
   if (webflowBadge) {
     button.style.bottom = "48px";
